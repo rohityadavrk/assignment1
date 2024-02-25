@@ -1,0 +1,455 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:silver;
+}
+.container{
+    width: 90%;
+    margin-inline: auto;
+    height: 100%;
+}
+:root{
+    --darkColor:black;
+    --greenColor:#b7ff00;
+    --dangerColor:red;
+    --greColor: grey;
+
+}
+ul{
+  list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top-nav> .container{
+    display: flex;
+    justify-content: space-between;
+}
+.top-nav{
+padding:12px 0;
+background-color: white;
+}
+.top-left a{
+    margin-right: 3px;
+    color: var(--greColor) ;
+}
+.top-left a:nth-child(2){
+    margin-right: 15px;
+}
+.top-right a{
+    margin-left: 15px;
+    color: var(--dangerColor);
+}
+.navbar{
+    background-color: var(--darkColor);
+    padding: 12px 0;
+    height: 80px;
+}
+.navbar> .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar> .container ul li a{
+    color: white;
+    margin: 0 20px;
+}
+.navbar> .container ul li a:hover{
+    color: var(--greenColor);
+}
+.navbar> .container ul{
+    display: flex;
+    
+    align-items: center;
+}
+.search-bar input{
+    padding: 5px 10px;
+    border-radius: 30px;
+    margin-right: 5px;
+    
+}
+.search-bar button{
+    padding: 5px 5px;
+    border-radius: 50px;
+   
+}
+.hero{
+   height: 100vh;
+    background: url(/image/banner-1.webp) ;
+    background-size: cover;
+    
+   
+    
+}
+
+.banner{
+    display: flex ;
+    height: 100%;
+    
+    align-items:center;
+}
+.caption{
+   
+    
+
+}
+
+.head-1{
+    color: white;
+    font-size: 72px;
+    font-weight: 800;
+    text-transform: uppercase;
+   
+}
+.bttn-box button{
+    margin-top: 50px;
+    padding: 12px 40px;
+    margin-right: 30px;
+    border: none;
+    color: var(--darkColor);
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.bttn-box button:first-child{
+    background-color: var(--greenColor);
+}
+.bttn-box button:last-child{
+    background-color: var(--dangerColor);
+}
+.bttn-box button:first-child:hover{
+    background-color: rgb(19, 19, 19);
+    
+    color: var(--greenColor);
+}
+.bttn-box button:last-child:hover{
+    background-color: rgb(19, 19, 19);
+    color: var(--dangerColor);
+}
+.card-section{
+    background-color: white;
+    background: url(/image/drew-beamer-kUHfMW8awpE-unsplash.jpg);
+    background-size: cover;
+  
+    
+}
+.card-banner{
+ padding: 25PX 0;
+}
+.card-head{
+    padding: 20px 0;
+    text-align: center;
+}
+.card-head p{
+    font-size: 28px;
+    font-weight: 600;
+    word-spacing: 10px;
+    line-height: 40px;
+}
+.row{
+    display: flex;
+    margin: 20px 0;
+   gap: 10px;
+  
+}
+.col{
+    width: 25%;
+   position: relative;
+    background-color: black;
+}
+.carbody{
+    width: 100%;
+  
+   
+}
+.cardbody img{
+    width: 100%;
+    height: 100%;
+    display: block;
+   
+    
+   
+}
+.cardbody img:hover{
+    transform: scale(1.2);
+
+    transition: 2s;
+}
+.card-caption{
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+   bottom: 10px
+   
+} 
+.card-caption h4{
+    font-size: 38px;
+    color: white;
+  
+}
+.card-caption p{
+    color: white;
+    font-size: 14px;
+    word-spacing: 5px;
+    line-height: 20px;
+    margin: 15px 0;
+}
+.card-caption button{
+     padding: 10px 30px;
+     color: var(--greenColor);
+     background-color: var(--darkColor);
+     border: none;
+}
+.card-caption button:hover{
+    background-color: var(--greenColor);
+    color: var(--darkColor);
+}
+.about{
+    background: linear-gradient(  rgb(19, 17, 36),rgb(36, 35, 45));
+    
+    padding: 40px 0;
+}
+.about-section {
+    display: flex;
+    gap: 20px;
+   
+    
+   
+   
+}
+.about-left{
+    width: 60%;
+ 
+
+}
+.about-left img{
+ width: 100%;
+
+}
+.about-right {
+    color: white;
+    width: 40%;
+    padding: 25px 0;
+    margin-left: 20px;
+    text-align: center;
+}
+.about-head{
+    font-size: 48px;
+    margin: 25px 0;
+}
+.about-para {
+ line-height: 24px;
+ text-align: justify;
+ color: var(--greColor);
+}
+.about-icon{
+    display: flex;
+    gap: 30px;
+    margin-top: 20px;
+    padding: 25px 0;
+    justify-content: center;
+  
+}
+.about-here a{
+    color: white; 
+    font-size: 30px;
+}
+.about-here a:last-child{
+    
+    font-size: 14px;
+    color: var(--greColor);
+    text-decoration: underline;
+}
+.about-here p{
+    padding: 10px 0;
+  
+}
+.about-here a:first-child:hover{
+    color: var(--greColor);
+}
+.about-here a:last-child:hover{
+    color: white;
+}
+.top-foot{
+    background-color: rgb(18, 18, 18);
+    
+    padding: 50px 0;
+ 
+
+  
+}
+.foot-mail {
+   text-align: center;
+}
+.foot-mail p{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 800;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.foot-mail input{
+    padding: 15px 100px;
+}
+.foot-mail button{
+    padding: 15px 50px;
+    background-color: var(--greenColor);
+    color: black;
+    font-weight: 600;
+    margin-left: 5px;
+    border: none;
+
+}
+.foot-mail button:hover{
+    background-color: rgb(19, 19, 19);
+    color: var(--greenColor);
+}
+.foot-row{
+    margin: 40px 0;
+    padding: 25px 0;
+    
+    display: flex;
+    justify-content: space-between;
+}
+.foot-body h6{
+   color: rgb(209, 209, 209);
+   font-size: 16px ;
+   margin-bottom: 20px;
+}
+.foot-body a{
+    display: block;
+    font-size: 14px;
+    color: rgb(202, 200, 200);
+     padding: 10px 0;
+     font-weight: 500;
+     text-transform: capitalize;
+}
+.bottom-foot> .container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.bottom-foot{
+    height: 80px;
+    background-color: rgb(35, 35, 35);
+}
+.footer-icon a{
+    display: inline;
+    margin-right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+
+/* regitstration form*/
+
+.registration{
+   
+    background: linear-gradient(black,white);
+    padding: 30px 0;
+    background-size: cover;
+   
+}
+.r-banner{
+    padding: 40px;
+    display: flex;
+    gap: 100px;
+    border-radius: 5px;
+   
+  
+}
+.r-img{
+    width: 450px;
+    margin-left: 100px;
+    
+    
+
+}
+.r-img img{
+    width: 100%;
+    display: block;
+    border-radius: 30px;
+    
+
+}
+.r-form{
+  
+  width: 50%;
+
+   
+}
+
+.r-form h1{
+ text-transform: uppercase;
+ font-size: 28px;
+ padding: 10px 0;
+ color: rgb(255, 255, 255);
+ margin: 50px 0;
+
+}
+.form-input{
+    position: relative;
+    margin: 20px 0;
+}
+.form-input input{
+    padding: 15px 15px;
+    width: 300px;
+    border-radius: 30px;
+    border: 0.5px solid grey;
+   
+    
+}
+.form-icon{
+    position: absolute;
+    top: 16px;
+    left: 15px;
+}
+.bttn-signup {
+    margin:15px 0;
+
+}
+.bttn-signup button{
+    padding: 15px 15px;
+    width: 300px;
+    border-radius: 30px;
+    background-color: rgb(7, 120, 233);
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+
+    border: none;
+}
+.bttn-main{
+    display: flex;
+    gap: 10px;
+}
+.bttn-social{
+    position: relative;
+}
+.bttn-icon{
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+.bttn-social button{
+    padding: 15px 15px;
+    width:145px;
+    border-radius: 30px;
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+.icon-col{
+    color: blue;
+}
+.icon-google{
+    color: red;
+}
