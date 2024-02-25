@@ -80,7 +80,7 @@ background-color: white;
 }
 .hero{
    height: 100vh;
-    background: url(/image/banner-1.webp) ;
+    background: url(banner-1.webp) ;
     background-size: cover;
     
    
